@@ -1,4 +1,4 @@
-import {AuthPayloadType} from '../types/types'
+import {AuthPayloadType} from '../types/reducerTypes'
 
 export const setSettings = (payload: AuthPayloadType) => ({
     type: "SET_SETTINGS",
