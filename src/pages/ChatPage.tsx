@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Send() {
+function ChatPage() {
     return (
         <div>
-            Send
+            ChatPage
         </div>
     )
 }
 
-export default Send
+export default ChatPage

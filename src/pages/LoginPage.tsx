@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Send() {
+function LoginPage() {
     return (
         <div>
-            Send
+            LoginPage
         </div>
     )
 }
 
-export default Send
+export default LoginPage
