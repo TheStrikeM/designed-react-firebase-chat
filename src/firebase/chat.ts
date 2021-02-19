@@ -30,8 +30,7 @@ class FirebaseMessages {
         return [messages, loading]
     }
 
-    async sendMessage(value: string) {
-
+    async sendMessage(value: string, setValue: Function) {
         this.firestore.collection('messages').add({
             uid: this.user.uid,
             displayName: this.user.displayName,
@@ -40,5 +39,6 @@ class FirebaseMessages {
             createdAt: firebase.firestore.FieldValue.serverTimestamp()
         })
 
+        setValue('')
     }
 }
